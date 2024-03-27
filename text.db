@@ -1,0 +1,10 @@
+npm init => tạo package.jon
+npm install express =>use framwork
+npm install ejs =>tạo html trong js
+npm install dotenv --save => tạo file .env => chứ biến môi trường
+npm install --save-dev nodemon =>công cụ giúp ứng dụng nodejs tự động restart mỗi khi có file thay đổi (mặc định các đuôi file .js.mjs .coffee .litcoffee)
+"dev": "node ./src/index.js"
+#Thêm nodemon vào dev
+"dev": "nodemon ./src/index.js"
+
+
