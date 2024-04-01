@@ -11,11 +11,15 @@ const hostname = process.env.HOST_NAME;
 app.set('views', path.join(__dirname,'views'))
 app.set('view engine', 'ejs')//tạo html bằng js
 
-app.get('/', (req, res) => res.send('Hello World!'))//ko khai báo route thì làm web biết bạn có những rou nào?
-
+//config static files
+//express tự động biết tất cả các static
+app.use(express.static(path.join(__dirname,'public')));
+app.get('/', (req, res) => res.send('Hello World!'));//ko khai báo route thì làm web biết bạn có những rou nào?
+//route
 app.get('/abc', (req, res) => {
     res.send('Hello World heahe!')
 })
+//route
 app.get('/thethao', (req, res) => {
     //res.send('<h1>Hello World heahe!</h1>')
     //render tạo view động

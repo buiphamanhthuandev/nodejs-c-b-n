@@ -1,0 +1,12 @@
+package.json => 
+public => phía client có thể xem được
+views => làm việc với ejs
+.env => tạo biến môi trường
+.gitignore => thì git sẽ ko nội dung được ghi trong (tên file)
+controllers => chứa code
+routes => điều hướng trang,chia nhỏ các routes dễ bảo trì
+models
+seeder => làm việc với database,tạo database fakef
+migration => ghi cấu hình database
+middleware
+services
